@@ -6,7 +6,7 @@
         </div>
         <div class="col-sm-10">
             <div class="form-group {{ $errors->has('issueDate') ? 'has-error' : "" }}">
-                {{ Form::text('issueDate',NULL, ['class'=>'form-control', 'id'=>'issueDate', 'placeholder'=>'Insert']) }}
+                {{ Form::date('issueDate',NULL, ['class'=>'form-control', 'id'=>'issueDate', 'placeholder'=>'Insert']) }}
                 {{ $errors->first('issueDate', ':message') }}
              </div>
         </div>
@@ -17,7 +17,7 @@
         </div>
         <div class="col-sm-10">
             <div class="form-group {{ $errors->has('dueDate') ? 'has-error' : "" }}">
-                {{ Form::text('dueDate',NULL, ['class'=>'form-control', 'id'=>'dueDate', 'placeholder'=>'Insert']) }}
+                {{ Form::date('dueDate',NULL, ['class'=>'form-control', 'id'=>'dueDate', 'placeholder'=>'Insert']) }}
                 {{ $errors->first('dueDate', ':message') }}
             </div>
         </div>
