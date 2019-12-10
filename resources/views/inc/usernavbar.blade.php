@@ -5,16 +5,19 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="margin-l">
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ route('dashboard-member') }}">Dashboard<span>|</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ route('member-books') }}">Books<span>|</span></a>
-            </li>
-        </ul>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('dashboard-member') }}">Dashboard<span>|</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('member-books') }}">Books<span>|</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('contact-create') }}">Contact Admin<span>|</span></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 @include('inc.flash-message')

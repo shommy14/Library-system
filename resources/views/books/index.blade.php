@@ -35,16 +35,15 @@
                 <td>{{ $book->published }}</td>
                 <td>{{ $book->category }}</td>
                 <td>
-                    @if( !empty($book->book))
-                        @if($book-> book -> returned)
-                            {{'Available'}}
-                        @else
-                            {{ 'Not available' }}
+                @if(!empty($book->book))
+                    @if($book-> book -> returned)
+                        {{'Available'}}
+                    @else
+                        {{'Not available'}}
                     @endif
-                        @else
-                        {{ 'Available' }}
-                        @endif
-                </td>
+                @else
+                    {{ 'Available' }}
+                @endif
                 <td>
                     <div class="margin-books">
                     <a class="view-button" href="{{route('books.show',$book->id)}}">View

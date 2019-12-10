@@ -27,11 +27,11 @@
                 <td>{{ $book->published }}</td>
                 <td>{{ $book->category }}</td>
                 <td>
-                    @if( !empty($book->book))
-                        @if($book-> book -> returned)
+                    @if(!empty($book->book))
+                        @if($book-> book -> returned == true)
                             {{'Available'}}
                         @else
-                            {{ 'Not available' }}
+                            {{'Not available'}}
                     @endif
                         @else
                         {{ 'Available' }}

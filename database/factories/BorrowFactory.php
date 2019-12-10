@@ -10,7 +10,7 @@ $factory->define(Borrow::class, function (Faker $faker) {
     return [
         'issueDate' => $faker->date('Y-m-d'),
         'dueDate' => $faker->date('Y-m-d'),
-        'returned' => 0,
+        'returned' => false,
         'bookId' => factory(\App\Book::class)->create(),
         'userId' => factory(\App\User::class)->create(),
     ];

@@ -11,8 +11,8 @@ class Book extends Model
     protected $dates = ['created_at','updated_at'];
     protected $table = 'books';
 
-    public function brand()
+    public function book()
     {
-        return $this->belongsTo('App/Category');
+        return $this->hasOne('App\Borrow', 'bookId');
     }
 }
