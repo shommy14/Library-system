@@ -34,9 +34,12 @@ Route::DELETE('/destroy/{user}', 'AdminController@destroy')->name('members-destr
 
 Route::resource('admin/books', 'BooksController');
 Route::resource('admin/borrow', 'BorrowsController');
-
 Route::get('member/books', 'HomeController@booksAvailable')->name('member-books');
 Route::get('member/books/show/{show}', 'HomeController@show')->name('member-show-book');
+
+Route::get('contact', 'ContactFormController@create')->name('contact-create');
+Route::post('contact', 'ContactFormController@store')->name('contact-store');
+
 
 
 
