@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\Category;
 use Illuminate\Http\Request;
 
 class BooksController extends Controller
@@ -29,7 +30,8 @@ class BooksController extends Controller
      */
     public function create()
     {
-        return view('books.create');
+        $categories = Category::all();
+        return view('books.create',compact('categories'));
     }
 
     /**
@@ -44,7 +46,7 @@ class BooksController extends Controller
         $this->validate($request,[
             'title'=>'required|string|max:255',
             'published'=>'required',
-            'category'=>'required',
+            'cat_id'=>'required',
         ]);
         Book::create($request->all());
 
@@ -71,8 +73,9 @@ class BooksController extends Controller
      */
     public function edit($id)
     {
+        $categories = Category::all();
         $book = Book::find($id);
-        return view('books.edit',compact('book'));
+        return view('books.edit',compact(['book','categories']));
     }
 
     /**
@@ -87,7 +90,7 @@ class BooksController extends Controller
         $this->validate($request,[
             'title' => 'required|string|max:255',
             'published' => 'required',
-            'category' => 'required',
+            'cat_id' => 'required',
         ]);
         Book::find($id)->update($request->all());
         return redirect()->route('books.index')->with('success','Book updated, success');

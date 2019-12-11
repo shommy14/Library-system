@@ -11,6 +11,6 @@ $factory->define(Book::class, function (Faker $faker) {
 Infinite Jest','Lolita','Maus','Things Fall Apart','To Kill a Mockingbird
 ','Where the Wild Things Are']),
         'published' => $faker->date('Y-m-d'),
-        'category' => $faker-> randomElement(['comedy','drama','mystery','romance'])
+        'cat_id' => \App\Category::all()->random()->id,
     ];
 });

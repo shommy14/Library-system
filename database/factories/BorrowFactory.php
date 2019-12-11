@@ -11,7 +11,7 @@ $factory->define(Borrow::class, function (Faker $faker) {
         'issueDate' => $faker->date('Y-m-d'),
         'dueDate' => $faker->date('Y-m-d'),
         'returned' => false,
-        'bookId' => factory(\App\Book::class)->create(),
-        'userId' => factory(\App\User::class)->create(),
+        'bookId' => \App\Book::all()->random()->id,
+        'userId' => \App\User::all()->random()->id,
     ];
 });

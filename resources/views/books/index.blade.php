@@ -33,7 +33,7 @@
                 <td>{{ $book->id }}</td>
                 <td>{{ $book->title }}</td>
                 <td>{{ $book->published }}</td>
-                <td>{{ $book->category }}</td>
+                <td>{{ $book->category->name }}</td>
                 <td>
                 @if(!empty($book->book))
                     @if($book-> book -> returned)

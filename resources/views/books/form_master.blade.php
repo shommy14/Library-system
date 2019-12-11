@@ -24,12 +24,16 @@
 </div>
     <div class="row">
         <div class="col-sm-2">
-            {!! form::label('category','Category') !!}
+            {!! form::label('cat_id','Category') !!}
         </div>
         <div class="col-sm-10">
-            <div class="form-group {{ $errors->has('category') ? 'has-error' : "" }}">
-                {{ Form::text('category',NULL, ['class'=>'form-control', 'id'=>'category', 'placeholder'=>'Insert']) }}
-                {{ $errors->first('category', ':message') }}
+            <div class="form-group {{ $errors->has('cat_id') ? 'has-error' : "" }}">
+                <select name="cat_id" id="cat_id" class="form-control">
+                    @foreach($categories as $category)
+                        <option value="{{$category -> id}}">{{ $category -> name }}</option>
+                        @endforeach
+                </select>
+                {{ $errors->first('cat_id', ':message') }}
             </div>
         </div>
     </div>
