@@ -20,7 +20,7 @@ class BorrowsController extends Controller
      */
     public function index()
     {
-        $borrowedBooks = Borrow::all();
+        $borrowedBooks = Borrow::with('member','book')->get();
         return view('borrow.index')->with('borrowedBooks', $borrowedBooks);
     }
 
