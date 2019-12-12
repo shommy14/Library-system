@@ -12,7 +12,7 @@ class AddBookCategoryCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'book:category {name}';
+    protected $signature = 'book:category';
 
     /**
      * The console command description.
@@ -28,9 +28,15 @@ class AddBookCategoryCommand extends Command
      */
     public function handle()
     {
-        $category = Category::create([
-            'name' => $this->argument('name'),
-        ]);
-        $this->info('Added: ' . $category->name);
+        $name = $this->ask('What is category name? ');
+
+        if($this->confirm('Are you ready to insert "'. $name . '"?' )) {
+            $category = Category::create([
+                'name' => $name,
+            ]);
+            return $this->info('Added: ' . $category->name);
+        }
+
+    $this->warn('No new category was added!');
     }
 }
