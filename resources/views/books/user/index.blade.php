@@ -47,5 +47,10 @@
             <p>No Available Books found</p>
         @endif
     </table>
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center pt-4">
+            {{ $books -> links() }}
+        </div>
+    </div>
 </div>
 @endsection

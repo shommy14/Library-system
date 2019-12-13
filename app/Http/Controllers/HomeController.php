@@ -39,7 +39,7 @@ class HomeController extends Controller
      */
     public function booksAvailable()
     {
-        $books = Book::all();
+        $books = Book::with('category')->paginate(15);
         return view('books.user.index')->with('books', $books);
     }
 

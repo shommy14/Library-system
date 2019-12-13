@@ -13,7 +13,6 @@
 
         <table class="table table-bordered text-sm-center">
             <tr>
-                <th>id</th>
                 <th>Member Name</th>
                 <th>Book Name</th>
                 <th>Issue Date</th>
@@ -27,7 +26,6 @@
             @if(count($borrowedBooks)>0 )
                 @foreach ($borrowedBooks as $borrowedBook)
                     <tr>
-                        <td>{{ $borrowedBook-> issueId }}</td>
                         <td>{{ $borrowedBook-> member -> name }}</td>
                         <td>{{ $borrowedBook -> book -> title }}</td>
                         <td>{{ $borrowedBook -> issueDate }}</td>
