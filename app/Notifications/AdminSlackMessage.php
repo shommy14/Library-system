@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class DueDate extends Notification
+class AdminSlackMessage extends Notification
 {
     use Queueable;
 
