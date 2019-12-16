@@ -5,20 +5,23 @@ namespace App\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Notifications\Messages\SlackMessage;
 use Illuminate\Notifications\Notification;
 
 class AdminSlackMessage extends Notification
 {
     use Queueable;
+    protected $event;
 
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($event)
     {
         //
+        $this->event = $event;
     }
 
     /**
@@ -29,7 +32,7 @@ class AdminSlackMessage extends Notification
      */
     public function via($notifiable)
     {
-        return ['mail'];
+        return ['mail','slack'];
     }
 
     /**
@@ -41,21 +44,21 @@ class AdminSlackMessage extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->line('New user has registered: '.$this->event->user->name)
+                    ->line('E-mail: '.$this->event->user->email);
+
     }
 
     /**
-     * Get the array representation of the notification.
+     * Get the Slack representation of the notification.
      *
      * @param  mixed  $notifiable
-     * @return array
+     * @return SlackMessage
      */
-    public function toArray($notifiable)
+    public function toSlack($notifiable)
     {
-        return [
-            //
-        ];
+        return (new SlackMessage)
+            ->success()
+            ->content('New user has registered!');
     }
 }

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b866a4bd-1423-4c94-a21a-fc623b7a30d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/LibraryApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LibraryApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Listeners/NotifyAdminViaSlack.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/NotifyAdminViaSlack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/DueDate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Notifications/AdminSlackMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/AdminSlackMessage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,6 +144,12 @@
       <path value="$PROJECT_DIR$/vendor/jenssegers/mongodb" />
       <path value="$PROJECT_DIR$/vendor/moontoast/math" />
       <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/laravel/slack-notification-channel" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TqKxjEac3ntAxXh67FuKhIZrEd" />
@@ -205,6 +217,18 @@
       <workItem from="1575119040430" duration="61041000" />
       <workItem from="1576147044251" duration="697000" />
       <workItem from="1576156275329" duration="17656000" />
+      <workItem from="1576319160517" duration="30000" />
+      <workItem from="1576400166444" duration="1442000" />
+      <workItem from="1576402036446" duration="1597000" />
+      <workItem from="1576410987886" duration="938000" />
+      <workItem from="1576412859709" duration="1571000" />
+      <workItem from="1576415005283" duration="1286000" />
+      <workItem from="1576431511933" duration="961000" />
+      <workItem from="1576433446007" duration="1572000" />
+      <workItem from="1576435416722" duration="798000" />
+      <workItem from="1576482350154" duration="1625000" />
+      <workItem from="1576484272212" duration="1697000" />
+      <workItem from="1576486234530" duration="1258000" />
     </task>
     <servers />
   </component>

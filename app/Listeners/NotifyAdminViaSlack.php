@@ -30,6 +30,6 @@ class NotifyAdminViaSlack implements ShouldQueue
     public function handle(NewCustomerHasRegisteredEvent $event)
     {
         $admins = Admin::all();
-        Notification::send($admins, new AdminSlackMessage());
+        Notification::send($admins, new AdminSlackMessage($event));
     }
 }
