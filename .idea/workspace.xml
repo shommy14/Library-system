@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b866a4bd-1423-4c94-a21a-fc623b7a30d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/LibraryApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LibraryApp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Listeners/NotifyAdminViaSlack.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Listeners/NotifyAdminViaSlack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactFormMail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Notifications/AdminSlackMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Notifications/AdminSlackMessage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +221,22 @@
       <workItem from="1576435416722" duration="798000" />
       <workItem from="1576482350154" duration="1625000" />
       <workItem from="1576484272212" duration="1697000" />
-      <workItem from="1576486234530" duration="1258000" />
+      <workItem from="1576486234530" duration="1697000" />
+      <workItem from="1576519036096" duration="1047000" />
+      <workItem from="1576568051603" duration="784000" />
+      <workItem from="1576573722081" duration="1634000" />
+      <workItem from="1576575478517" duration="1727000" />
+      <workItem from="1576577328078" duration="1706000" />
+      <workItem from="1576579265401" duration="947000" />
+      <workItem from="1576595452974" duration="1631000" />
+      <workItem from="1576597269310" duration="1711000" />
+      <workItem from="1576599374974" duration="1133000" />
+      <workItem from="1576766984835" duration="1747000" />
+      <workItem from="1576769094920" duration="1627000" />
+      <workItem from="1576771245746" duration="1552000" />
+      <workItem from="1576773087901" duration="1649000" />
+      <workItem from="1576775235905" duration="1601000" />
+      <workItem from="1576777144237" duration="463000" />
     </task>
     <servers />
   </component>
