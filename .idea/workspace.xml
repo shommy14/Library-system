@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b866a4bd-1423-4c94-a21a-fc623b7a30d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/RemindUsersCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/RemindUsersCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -237,6 +238,10 @@
       <workItem from="1576773087901" duration="1649000" />
       <workItem from="1576775235905" duration="1601000" />
       <workItem from="1576777144237" duration="463000" />
+      <workItem from="1576850528216" duration="577000" />
+      <workItem from="1576852348230" duration="1542000" />
+      <workItem from="1576854575699" duration="1649000" />
+      <workItem from="1576856759286" duration="955000" />
     </task>
     <servers />
   </component>
