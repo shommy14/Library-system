@@ -4,7 +4,6 @@
     <list default="true" id="b866a4bd-1423-4c94-a21a-fc623b7a30d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Console/Commands/RemindUsersCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/RemindUsersCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -242,6 +241,12 @@
       <workItem from="1576852348230" duration="1542000" />
       <workItem from="1576854575699" duration="1649000" />
       <workItem from="1576856759286" duration="955000" />
+      <workItem from="1577109811199" duration="635000" />
+      <workItem from="1577112908695" duration="1570000" />
+      <workItem from="1577128013489" duration="1053000" />
+      <workItem from="1577129740772" duration="1676000" />
+      <workItem from="1577131657245" duration="1826000" />
+      <workItem from="1577133698659" duration="1472000" />
     </task>
     <servers />
   </component>

@@ -44,7 +44,7 @@ class RemindUsersCommand extends Command
      */
     public function handle()
     {
-        $usersId = Borrow::whereDate('dueDate','>',Carbon::now())->pluck('userId');
+        $usersId = Borrow::where('returned', '=', 0)->whereDate('dueDate','>',Carbon::now())->pluck('userId');
         $users = User::findMany($usersId->toArray());
         Notification::send($users, new RemindUserAboutBookDueDate());
     }
