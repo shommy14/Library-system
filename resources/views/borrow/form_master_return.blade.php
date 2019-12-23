@@ -2,12 +2,6 @@
 <div class="margina">
     <h3>ARE YOU SURE? </h3>
     <div class="col-sm-10">
-        <div class="form-group {{ $errors->has('issueDate') ? 'has-error' : "" }}">
-            {{ Form::hidden('issueDate',NULL, ['class'=>'form-control', 'id'=>'issueDate', 'placeholder'=>'Insert']) }}
-            {{ $errors->first('issueDate', '<p class="help-block">:message</p>') }}
-        </div>
-    </div>
-    <div class="col-sm-10">
         <div class="form-group {{ $errors->has('dueDate') ? 'has-error' : "" }}">
             {{ Form::hidden('dueDate',NULL, ['class'=>'form-control', 'id'=>'dueDate', 'placeholder'=>'Insert']) }}
             {{ $errors->first('dueDate', '<p class="help-block">:message</p>') }}

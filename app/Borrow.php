@@ -8,8 +8,7 @@ class Borrow extends Model
 {
     protected $table= "borrows";
     protected $primaryKey = 'issueId';
-    protected $fillable = ['issueDate', 'dueDate', 'bookId', 'userId','returned'];
-    public $timestamps = false;
+    protected $fillable = ['dueDate', 'bookId', 'userId','returned'];
 
     public function member()
     {

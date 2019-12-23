@@ -43,7 +43,6 @@ class BorrowsController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-               'issueDate' => 'required',
                'dueDate' => 'required',
                'bookId' => 'required',
                'userId' => 'required',
@@ -75,7 +74,6 @@ class BorrowsController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'issueDate' => 'required',
             'dueDate' => 'required',
             'bookId' => 'required',
             'userId' => 'required',

@@ -8,7 +8,6 @@ use Faker\Generator as Faker;
 
 $factory->define(Borrow::class, function (Faker $faker) {
     return [
-        'issueDate' => $faker->date('Y-m-d'),
         'dueDate' => $faker->date('Y-m-d'),
         'returned' => false,
         'bookId' => \App\Book::all()->random()->id,

@@ -2,17 +2,6 @@
 <div class="margina">
     <div class="row">
         <div class="col-sm-2">
-            {!! form::label('issueDate','Issue Date') !!}
-        </div>
-        <div class="col-sm-10">
-            <div class="form-group {{ $errors->has('issueDate') ? 'has-error' : "" }}">
-                {{ Form::date('issueDate',NULL, ['class'=>'form-control', 'id'=>'issueDate', 'placeholder'=>'Insert']) }}
-                {{ $errors->first('issueDate', ':message') }}
-             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2">
             {!! form::label('dueDate','Due Date') !!}
         </div>
         <div class="col-sm-10">

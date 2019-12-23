@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b866a4bd-1423-4c94-a21a-fc623b7a30d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/RemindUsersCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/RemindUsersCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Borrow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BorrowsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/BorrowFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/BorrowFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_19_172037_create_borrows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_172037_create_borrows_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/borrow/form_master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrow/form_master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/borrow/form_master_return.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/borrow/form_master_return.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +253,11 @@
       <workItem from="1577128013489" duration="1053000" />
       <workItem from="1577129740772" duration="1676000" />
       <workItem from="1577131657245" duration="1826000" />
-      <workItem from="1577133698659" duration="1472000" />
+      <workItem from="1577133698659" duration="2071000" />
+      <workItem from="1577136990018" duration="1630000" />
+      <workItem from="1577139215949" duration="1404000" />
+      <workItem from="1577141049723" duration="1587000" />
+      <workItem from="1577143127939" duration="913000" />
     </task>
     <servers />
   </component>
