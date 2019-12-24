@@ -25,6 +25,6 @@ class Admin extends Authenticatable
      */
     public function routeNotificationForSlack($notification)
         {
-        return 'https://hooks.slack.com/services/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';
+        return 'https://hooks.slack.com/services/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';
     }
 }
