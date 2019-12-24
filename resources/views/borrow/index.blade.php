@@ -15,7 +15,6 @@
             <tr>
                 <th>Member Name</th>
                 <th>Book Name</th>
-                <th>Issue Date</th>
                 <th>Due Date</th>
                 <th with="140px" class="text-center">
                     <a href="{{route('borrow.create')}}" class="create-button">Borrow
@@ -28,7 +27,6 @@
                     <tr>
                         <td>{{ $borrowedBook-> member -> name }}</td>
                         <td>{{ $borrowedBook -> book -> title }}</td>
-                        <td>{{ $borrowedBook -> issueDate }}</td>
                         <td>{{ $borrowedBook -> dueDate }}</td>
                         <td>
                             @if($borrowedBook -> returned == 0)
