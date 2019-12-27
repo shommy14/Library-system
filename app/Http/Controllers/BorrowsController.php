@@ -44,8 +44,8 @@ class BorrowsController extends Controller
     {
         $this->validate($request, [
                'dueDate' => 'required',
-               'bookId' => 'required',
-               'userId' => 'required',
+               'bookId' => ['required', 'exists:books,id'],
+               'userId' => ['required', 'exists:users,id'],
                 'returned' => 'required'
         ]);
         Borrow::create($request->all());
@@ -75,8 +75,8 @@ class BorrowsController extends Controller
     {
         $this->validate($request,[
             'dueDate' => 'required',
-            'bookId' => 'required',
-            'userId' => 'required',
+            'bookId' => ['required', 'exists:books,id'],
+            'userId' => ['required', 'exists:users,id'],
             'returned' => 'required'
         ]);
         Borrow::find($id)->update($request->all());
