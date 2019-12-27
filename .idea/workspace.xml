@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b866a4bd-1423-4c94-a21a-fc623b7a30d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BorrowsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BorrowsController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +252,9 @@
       <workItem from="1577143127939" duration="1209000" />
       <workItem from="1577190031492" duration="1276000" />
       <workItem from="1577192342659" duration="695000" />
-      <workItem from="1577454376361" duration="998000" />
+      <workItem from="1577454376361" duration="1578000" />
+      <workItem from="1577456293505" duration="1633000" />
+      <workItem from="1577458588049" duration="1616000" />
     </task>
     <servers />
   </component>
