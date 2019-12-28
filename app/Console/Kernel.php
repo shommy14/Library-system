@@ -13,8 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        'App\Console\Commands\RemindUsersCommand',
-        'App\Console\Commands\WarnUserAboutBookNotReturnedOnTime',
+        \App\Console\Commands\RemindUsersCommand::class,
+        \App\Console\Commands\WarnUserAboutBookNotReturnedOnTime::class,
     ];
 
     /**
@@ -25,10 +25,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('book:reminder')
-             ->daily();
-         $schedule->command('book:warning')
-             ->daily();
+        $schedule->command('book:reminder')
+            ->daily();
+        $schedule->command('book:warning')
+            ->dailyAt('13:00')->withoutOverlapping();
     }
 
     /**
