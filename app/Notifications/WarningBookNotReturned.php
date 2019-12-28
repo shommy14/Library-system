@@ -41,8 +41,9 @@ class WarningBookNotReturned extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->salutation('Warning')
-            ->line('YOU HAVE NOT RETURNED BOOK! Check your DASHBOARD if you cant remember which one!');
+            ->greeting('Warning!')
+            ->line('YOU HAVE NOT RETURNED BOOK ON TIME!')
+            ->line('Check your DASHBOARD if you cant remember which one and return as soon as possible!');
     }
 
     /**
